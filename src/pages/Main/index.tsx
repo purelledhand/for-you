@@ -43,8 +43,14 @@ const Main: React.FC = () => {
         className={classes.Player}
       />
       <Footer>
+        {
+          // TODO: Add EntryLink Feature
+        }
         <Grid item />
         <ExploreButton onClick={changeWindow} />
+        {
+          // TODO: Add Mute Button
+        }
         <Grid item />
       </Footer>
     </>
