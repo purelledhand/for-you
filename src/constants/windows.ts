@@ -38,9 +38,9 @@ export const windows: Window[] = [
   },
   {
     id: 5,
-    windowId: '422078573',
-    location: 'Monterrey, Mexico',
-    author: 'Nomadic Ambience',
+    windowId: '496541138',
+    location: 'Istanbul, Turkey',
+    author: 'Asli',
   },
   {
     id: 6,
@@ -206,9 +206,9 @@ export const windows: Window[] = [
   },
   {
     id: 34,
-    windowId: '429122953',
-    location: 'Glanamman, Wales',
-    author: 'Belinda Ash',
+    windowId: '498870825',
+    location: 'Dubai Marina',
+    author: 'Shane',
   },
   {
     id: 35,
@@ -452,9 +452,9 @@ export const windows: Window[] = [
   },
   {
     id: 75,
-    windowId: '436652547',
-    location: 'Wertheim, Germany',
-    author: 'Johannes Stahl',
+    windowId: '496379653',
+    location: 'Cascade Locks, OR, USA',
+    author: 'Dave',
   },
   {
     id: 76,
@@ -506,14 +506,20 @@ export const windows: Window[] = [
   },
   {
     id: 84,
-    windowId: '437550368',
-    location: 'Germany, Düsseldorf',
-    author: 'Klaus Mainz',
+    windowId: '498867459',
+    location: 'Hanapepe, Hawaii, USA',
+    author: 'Justin',
   },
   {
     id: 85,
     windowId: '437550345',
     location: 'Berlin-Marzahn, Germany',
     author: 'Beate Müller',
+  },
+  {
+    id: 86,
+    windowId: '494422894',
+    location: 'Minnesota, USA',
+    author: 'Torrie',
   },
 ];
