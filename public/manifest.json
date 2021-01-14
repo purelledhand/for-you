@@ -7,10 +7,10 @@
   "browser_action": {
     "default_icon": "icon.png"
   },
+  
+  "permissions": ["topSites"],
 
-  "permissions": [],
-
-  "content_security_policy": "script-src 'self’ ‘unsafe-eval'; object-src 'self'",
+  "content_security_policy": "object-src 'none'; script-src 'self' https://player.vimeo.com 'sha256-yggbOdQGOXg0CQjw7V3SRAY8FH6d0OUzsWaJW9L1/s4='; media-src https://player.vimeo.com; style-src 'self' 'unsafe-inline';",
 
   "chrome_url_overrides": {
     "newtab": "index.html"
