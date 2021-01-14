@@ -11,7 +11,7 @@ const useStyle = makeStyles({
   },
 });
 
-const PageFooter: React.FC = ({ children }) => {
+const Footer: React.FC = ({ children }) => {
   const classes = useStyle();
 
   return (
@@ -21,4 +21,4 @@ const PageFooter: React.FC = ({ children }) => {
   );
 };
 
-export default PageFooter;
+export default Footer;
