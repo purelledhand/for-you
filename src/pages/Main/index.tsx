@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Grid, Typography } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import ReactPlayer from 'react-player';
 
@@ -8,6 +8,7 @@ import ExploreButton from 'components/ExploreButton';
 import Footer from 'components/Footer';
 import Header from 'components/Header';
 import HealBox from 'components/HealBox';
+import Logo from 'components/Logo';
 import MetadataBox from 'components/MetadataBox';
 import { HOST_URL } from 'constants/env';
 import { windows } from 'constants/windows';
@@ -30,9 +31,7 @@ const Main: React.FC = () => {
     <>
       <Header>
         <HealBox />
-        <Typography variant='body1'>
-          For you.
-        </Typography>
+        <Logo />
         <MetadataBox windowIndex={windowIndex} />
       </Header>
       <ReactPlayer
