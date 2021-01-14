@@ -23,7 +23,7 @@ const Logo: React.FC = () => {
   return (
     <Grid container item direction='column' alignItems='center' className={classes.Wrapper}>
       <Grid item className={classes.Title}>
-        Refresh air <b>for you.</b>
+        Relaxing air <b>for you.</b>
       </Grid>
     </Grid>
   );

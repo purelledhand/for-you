@@ -6,22 +6,18 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyle = makeStyles({
   Container: {
     width: 280,
-    padding: 24,
+    padding: 20,
     backgroundColor: 'rgba(255, 255, 255, 0.5)',
     color: '#ffffff',
     borderRadius: 8,
   },
   Title: {
-    fontSize: '1em',
+    fontSize: 14,
     marginBottom: 12,
   },
   Description: {
-    fontSize: 14,
-    lineHeight: 1.5,
-  },
-  Footer: {
-    padding: '8px 24px 24px 24px',
     fontSize: 12,
+    lineHeight: 1.5,
   },
 });
 

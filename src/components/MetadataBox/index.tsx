@@ -2,23 +2,22 @@ import React from 'react';
 
 import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import LocationOnRoundedIcon from '@material-ui/icons/LocationOnRounded';
 
 import { windows } from 'constants/windows';
 
 const useStyle = makeStyles({
   Container: {
-    width: 280,
+    width: 260,
     backgroundColor: 'rgba(255, 255, 255, 0.5)',
     color: '#ffffff',
     borderRadius: 8,
   },
-  Wrapper: { padding: 24 },
+  Wrapper: { padding: 16 },
   Title: {
-    fontSize: '1em',
-    marginBottom: 12,
+    fontSize: 14,
+    marginBottom: 6,
   },
-  Description: { fontSize: 14 },
+  Description: { fontSize: 12 },
   Footer: {
     padding: '8px 12px',
     fontSize: 12,
@@ -40,12 +39,11 @@ const MetadataBox: React.FC<Props> = ({ windowIndex = 0 }) => {
           {author}&apos;s window.
         </Grid>
         <Grid container item className={classes.Description}>
-          <LocationOnRoundedIcon fontSize='small' />
-          &nbsp;{location}
+          <b>{location}</b>
         </Grid>
       </Grid>
       <Grid container justify='flex-end' className={classes.Footer}>
-        window-swap.com
+        <a href='https://window-swap.com/window' target='__blank'>window-swap.com</a>
       </Grid>
     </Grid>
   );

@@ -10,9 +10,10 @@ const useStyle = makeStyles({
     color: '#ffffff',
     height: 48,
     borderRadius: 32,
+    textTransform: 'capitalize',
     '&:hover': {
-      backgroundColor: '#ffffff',
-      color: '#000000',
+      backgroundColor: 'rgba(255, 255, 255, 0.9)',
+      color: 'rgba(0, 0, 0, 0.7)',
     },
   },
 });
