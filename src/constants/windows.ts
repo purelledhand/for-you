@@ -14,9 +14,9 @@ export const windows: Window[] = [
   },
   {
     id: 1,
-    windowId: '422078593',
-    location: 'Tangerang Selatan',
-    author: 'Kevin Arffandy',
+    windowId: '496543039',
+    location: 'Brisbane, Australia',
+    author: 'Keith',
   },
   {
     id: 2,

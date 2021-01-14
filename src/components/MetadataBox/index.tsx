@@ -9,9 +9,7 @@ import { windows } from 'constants/windows';
 const useStyle = makeStyles({
   Container: {
     width: 280,
-    marginRight: 24,
-    marginTop: 24,
-    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    backgroundColor: 'rgba(255, 255, 255, 0.5)',
     color: '#ffffff',
     borderRadius: 8,
   },

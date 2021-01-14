@@ -7,6 +7,8 @@ import ReactPlayer from 'react-player';
 import ExploreButton from 'components/ExploreButton';
 import Footer from 'components/Footer';
 import Header from 'components/Header';
+import HealBox from 'components/HealBox';
+import MetadataBox from 'components/MetadataBox';
 import { HOST_URL } from 'constants/env';
 import { windows } from 'constants/windows';
 
@@ -27,11 +29,11 @@ const Main: React.FC = () => {
   return (
     <>
       <Header>
-        <Grid item />
+        <HealBox />
         <Typography variant='body1'>
           For you.
         </Typography>
-        <Grid item />
+        <MetadataBox windowIndex={windowIndex} />
       </Header>
       <ReactPlayer
         url={`${HOST_URL}/video/${windows[windowIndex].windowId}`}
