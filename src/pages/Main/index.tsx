@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
-import { Grid } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import ReactPlayer from 'react-player';
 
 import ExploreButton from 'components/ExploreButton';
-import PageFooter from 'components/PageFooter';
+import Footer from 'components/Footer';
+import Header from 'components/Header';
 import { HOST_URL } from 'constants/env';
 import { windows } from 'constants/windows';
 
@@ -13,6 +14,7 @@ const useStyle = makeStyles({
   Player: {
     position: 'fixed',
     top: 0,
+    zIndex: -1,
   },
 });
 
@@ -24,6 +26,13 @@ const Main: React.FC = () => {
 
   return (
     <>
+      <Header>
+        <Grid item />
+        <Typography variant='body1'>
+          For you.
+        </Typography>
+        <Grid item />
+      </Header>
       <ReactPlayer
         url={`${HOST_URL}/video/${windows[windowIndex].windowId}`}
         playing
@@ -32,11 +41,11 @@ const Main: React.FC = () => {
         height='100vh'
         className={classes.Player}
       />
-      <PageFooter>
+      <Footer>
         <Grid item />
         <ExploreButton onClick={changeWindow} />
         <Grid item />
-      </PageFooter>
+      </Footer>
     </>
   );
 };
