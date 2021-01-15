@@ -19,6 +19,16 @@ const useStyle = makeStyles({
     top: 0,
     zIndex: -1,
   },
+  Container: {
+    padding: 24,
+    width: '100vw',
+    height: '100vh',
+  },
+  Link: {
+    width: 240,
+    fontSize: 12,
+  },
+  Right: { textAlign: 'right' },
 });
 
 const Main: React.FC = () => {
@@ -29,11 +39,7 @@ const Main: React.FC = () => {
 
   return (
     <>
-      <Header>
-        <MetadataBox windowIndex={windowIndex} />
-        <Logo />
-        <TopSitesList />
-      </Header>
+
       <ReactPlayer
         url={`${HOST_URL}/video/${windows[windowIndex].windowId}`}
         playing
@@ -42,17 +48,22 @@ const Main: React.FC = () => {
         height='100vh'
         className={classes.Player}
       />
-      <Footer>
-        {
-          // TODO: Add EntryLink Feature
-        }
-        <Grid item />
-        <ExploreButton onClick={changeWindow} />
-        {
-          // TODO: Add Mute Button
-        }
-        <Grid item />
-      </Footer>
+      <Grid container wrap='nowrap' direction='column' justify='space-between' className={classes.Container}>
+        <Header>
+          <MetadataBox windowIndex={windowIndex} />
+          <Logo />
+          <TopSitesList />
+        </Header>
+        <Footer>
+          <Grid item className={classes.Link}>
+            <a href='https://window-swap.com/window' target='__blank'>window-swap.com</a>
+          </Grid>
+          <ExploreButton onClick={changeWindow} />
+          <Grid item className={[classes.Link, classes.Right].join(' ')} justify='flex-end'>
+            <a href='https://github.com/purelledhand/for-you' target='__blank'>github</a>
+          </Grid>
+        </Footer>
+      </Grid>
     </>
   );
 };

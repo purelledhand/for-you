@@ -9,7 +9,7 @@ const useStyle = makeStyles({
   Container: {
     width: 200,
     padding: 16,
-    backgroundColor: 'rgba(255, 255, 255, 0.5)',
+    backgroundColor: 'transparent',
     color: '#ffffff',
     borderRadius: 8,
   },

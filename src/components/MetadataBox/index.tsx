@@ -7,21 +7,17 @@ import { windows } from 'constants/windows';
 
 const useStyle = makeStyles({
   Container: {
-    width: 260,
-    backgroundColor: 'rgba(255, 255, 255, 0.5)',
+    width: 240,
+    padding: 16,
+    backgroundColor: 'transparent',
     color: '#ffffff',
     borderRadius: 8,
   },
-  Wrapper: { padding: 16 },
   Title: {
     fontSize: 14,
     marginBottom: 6,
   },
   Description: { fontSize: 12 },
-  Footer: {
-    padding: '8px 12px',
-    fontSize: 12,
-  },
 });
 
 interface Props {
@@ -34,16 +30,11 @@ const MetadataBox: React.FC<Props> = ({ windowIndex = 0 }) => {
 
   return (
     <Grid container item direction='column' className={classes.Container}>
-      <Grid container item direction='column' className={classes.Wrapper}>
-        <Grid item className={classes.Title}>
-          {author}&apos;s window.
-        </Grid>
-        <Grid container item className={classes.Description}>
-          <b>{location}</b>
-        </Grid>
+      <Grid item className={classes.Title}>
+        {author}&apos;s window.
       </Grid>
-      <Grid container justify='flex-end' className={classes.Footer}>
-        <a href='https://window-swap.com/window' target='__blank'>window-swap.com</a>
+      <Grid container item className={classes.Description}>
+        <b>{location}</b>
       </Grid>
     </Grid>
   );
