@@ -5,4 +5,4 @@
 Explore windows around the world in every new tab.
 
 
-![for-you](./assets/screenshot.png)
+![for-you](./assets/screenshot-0.0.1.png)
