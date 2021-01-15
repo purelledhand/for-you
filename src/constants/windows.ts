@@ -1,9 +1,4 @@
-export interface Window {
-  id: number;
-  windowId: string;
-  location: string;
-  author: string;
-}
+import { Window } from 'utils/types';
 
 export const windows: Window[] = [
   {

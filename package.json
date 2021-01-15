@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@types/chrome": "^0.0.128",
     "csp-html-webpack-plugin": "^5.1.0",
     "eslint-config-airbnb-typescript": "^12.0.0",
     "eslint-plugin-import": "^2.22.1",
